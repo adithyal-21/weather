@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>weather report</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+      .a{
+          height:55px;
+          width:139%;
+          border:solid 1px black;
+          position:relative;
+          right:220px;
+          background-color: black;
+          
+      }
+      #display{
+          position: relative;
+          left:1160px;
+          top:-61px;
+          width:230px;
+          text-align: center;
+          border-radius: 10px;
+          height: 40px;
+          font-style: italic;
+      }
+      #but{
+          position: relative;
+          left:1170px;
+          top:-64px;
+         height: 35px;
+          font-size: 18px;
+          width:120px;
+          font-style: italic;
+         }
+         .names{
+             position: relative;
+             top:50px;
+             font-size: 300px;
+         }
+        
+    
+  </style>
+</head>
+
+<body style="background: url(back.jpeg)no-repeat;background-position: center;background-size:1620px 1620px;">
+
+<div class="container">
+<!--Header-->
+  <div class="a">
+            <p  style="color:whitesmoke;text-align: center;font-size: 35px;font-style: italic;">WEATHER REPORT</p>
+            <input type="text" id="display" placeholder="Enter the Place" required>
+            <button type="button" class="btn btn-primary" id="but" >Search</button>
+  </div>
+<!--box designand header part-->
+    <div class="c" style="width:500px;height:550px;border:solid 1px black;position: relative;top:70px;
+        left:280px;border-radius: 25px;background: url(back2.jpeg)no-repeat;background-position: top;background-size:500px 250px;
+        -webkit-box-shadow:-1px 4px 26px 11px black;-maz-box-shadow:-10px 4px 26px 15px  black;box-shadow:  -1px 3px 26px 18px  black">
+         <img src="refresh.png" style="color:whitesmoke;position: relative;top:5px;left:10px" onclick="refresh()">
+         <h5 id="date" style="color:whitesmoke;font-size: 23px;font-style: italic;position: relative;top:180px"></h5>
+         <h3 id="city" style="color:whitesmoke;font-size: 25px;position: relative;top:-1px;left:360px;font-style: italic;"></h3>
+         <h3 id="temp" style="color:whitesmoke;font-size: 30px;position: relative;top:-85px;left:380px;font-style: italic;" ></h3>
+  
+
+  <div class="row" style="position: relative;top:130px;left:60px">
+    <div class="col-sm-6">
+      <h2 id="texthum" style="color: whitesmoke;font-style: italic;font-size: 28px;"></h2>
+      <h3 id="hum"style="color:whitesmoke;font-size:23px;font-style:italic;"></h3>
+    </div>
+  <div class="col-sm-6">
+   <h2 id="textpres"style="color: whitesmoke;font-style: italic;font-size: 30px;"></h2>
+   <h3 id="pres"style="color:whitesmoke;font-size:23px;font-style:italic;"></h3>
+  </div>
+</div>
+
+<div class="row" style="position: relative;top:200px;left:60px">
+  <div class="col-sm-6">
+     <h2 id="textdesc"style="color: whitesmoke;font-style: italic;font-size: 28px;"> </h2>
+     <h3 id="desc"style="color:whitesmoke;font-size:21px;font-style:italic;"></h3>
+  </div>
+
+<div class="col-sm-6">
+  <h2 id="textwind"style="color: whitesmoke;font-style: italic;font-size: 28px;"></h2>
+  <h3 id="wind"style="color:whitesmoke;font-size:23px;font-style:italic"></h3>
+</div>
+</div>
+</div>
+</div>
+    <script src="design.js"></script>
+    </body>
+    </html>
