@@ -55,6 +55,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=a
     winds.innerHTML=wind+" km/h";
 
   
+}).catch(()=>{
+    console.log("Error while fetching data")
+    alert("Please enter valiad pincode")
 })
 
 })
